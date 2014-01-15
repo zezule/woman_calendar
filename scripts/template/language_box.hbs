@@ -1,0 +1,15 @@
+{{!
+{
+  "name" : "language_box",
+  "decription" : "Main menu position template",
+  "styles" : ["../template/styles/language_box"]
+}
+}}
+<ul>
+{{#each languages}}
+  <li>
+    <button data-lang-code="{{@key}}" {{#each this}}{{@key}}="{{this}}"{{/each}}>{{@key}}</button>
+  </li>
+{{/each}}
+</ul>
+

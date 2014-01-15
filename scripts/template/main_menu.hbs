@@ -1,0 +1,12 @@
+{{!
+{
+  "name" : "chart_tab",
+  "decription" : "A Demo Template",
+  "styles" : ["../template/styles/main_menu"],
+  "helpers": ["../helpers/translate"]
+}
+}}
+
+{{#each menu_positions}}
+  <li id="{{this.tab_tile_code}}" data-pos-id="{{@key}}">{{translate this.tab_tile_code}}</li>
+{{/each}}

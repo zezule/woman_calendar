@@ -1,0 +1,12 @@
+#period_statistic_box{
+	border-top: 1px solid #ebebeb;
+	margin-top: 20px;
+}
+#period_statistic_box ul {
+	list-style: none;
+}
+
+#period_statistic_box li {
+	font-size: 14px;
+	margin: 5px 0px;
+}

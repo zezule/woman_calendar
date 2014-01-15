@@ -1,0 +1,29 @@
+{{!
+{
+  "name" : "chart_tab",
+  "decription" : "A Demo Template",
+  "styles" : ["../template/styles/period_form_box"],
+  "helpers": ["../helpers/translate"]
+}
+}}
+<button>{{translate "period_form_insert_button"}}</button>
+
+<div id="period_insertion_popup" title="Insert Period Information">
+
+	<p>{{translate "period_form_desc"}} <strong>{{translate "period_form_desc_strong"}}</strong></p>
+
+	<form action="" method="post">
+	<div class="form_control_group">
+		<label for="period_start_date">{{translate "period_form_box_start_date"}}</label><br/>
+		<input type="text" name="period_start_date" id="period_start_date" value="{{translate 'period_form_insert_start_date'}}"/>
+	</div>
+	<div class="form_control_group">
+		<label for="period_end_date">{{translate "period_form_box_end_date"}}</label> <br/>
+		<input type="text" name="period_end_date" id="period_end_date"  value="{{translate 'period_form_insert_end_date'}}"/>
+	</div>
+	</form>
+
+	<section id="period_insertion_error_box">
+	</section>
+
+</div>

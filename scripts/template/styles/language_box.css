@@ -1,0 +1,27 @@
+
+#language_box {
+	display: inline-block;
+	float: right;
+}
+
+#language_box li{
+	display: inline;
+}
+
+#language_box li button{
+	font-size: 12px;
+	text-transform:uppercase;
+	background: inherit;
+	border: none;
+	width: 36px;
+	height: 30px;
+}
+
+#language_box li button.active{
+	display: inline;
+	text-transform:uppercase;
+	background-image: url(../img/active_language.gif);
+	background-repeat: no-repeat;
+	border: none;
+
+}

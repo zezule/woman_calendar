@@ -1,0 +1,21 @@
+{{!
+{
+  "name" : "chart_tab",
+  "decription" : "A Demo Template",
+  "styles" : ["../template/styles/period_statistic_box"],
+  "helpers": ["../helpers/translate"]
+}
+}}
+<section>
+	<h2>{{translate "stat_box_title"}}</h2>
+	<ul>
+		<li>{{translate "stat_box_longest_period_length"}}:  <strong>{{longest_period_length}}</strong> </li>
+		<li>{{translate "stat_box_longest_period_start_date"}}:  <strong>{{longest_period_start_date}}</strong> </li>
+
+		<li>{{translate "stat_box_shortest_period_length"}}:  <strong>{{shortest_period_length}}</strong> </li>
+		<li>{{translate "stat_box_shortest_period_start_date"}}:  <strong>{{shortest_period_start_date}}</strong> </li>
+
+		<li>{{translate "stat_box_longest_gap_length"}}:  <strong>{{longest_gap_length}}</strong> </li>
+		<li>{{translate "stat_box_shortest_gap_length"}}:  <strong>{{shortest_gap_length}}</strong> </li>
+	</ul>
+</section>

@@ -1,0 +1,29 @@
+#period_estimation_box {
+	position: relative;
+	float: right;
+	top: -30px;
+	right: 0px;
+	display: inline-block;
+	position: relative;
+	min-width: 260px;
+	max-width: 350px;
+	min-height: 120px;
+	max-height : 150px;
+	border: 1px solid #787878;
+	box-shadow: 3px 3px 5px #e4e4e4;
+}
+#period_estimation_box aside {
+	margin: 20px;
+}
+#period_estimation_box h3 {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+#period_estimation_box ul {
+	font-size: 14px;
+	list-style: none;
+}
+#period_estimation_box li {
+	margin-bottom: 5px;
+}
