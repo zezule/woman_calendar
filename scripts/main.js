@@ -1,5 +1,4 @@
 requirejs.config({
-	baseUrl: '../scripts',
 	paths: {
 		hbs: 'vendors/hbs',
 		backbone: 'vendors/backbone',

@@ -1,28 +1,32 @@
 <?php
+require_once(APPPATH . 'libraries/Layout.php');
+require_once(APPPATH . 'libraries/View.php');
 
 class Main extends CI_Controller {
 
-	public function message($to = 'World')
-	{ //php index.php main message -- CLI
-		if (true === $this->input->is_cli_request()){
-			echo "Hello {$to}!".PHP_EOL;
-		}
+	private $layout = null;
+	
+	public function __construct()
+	{
+		parent::__construct();
+		$this->layout = new Layout();
+		$this->layout->set_title('KK');
+		$this->layout->set_header(new View('header'));
+		$this->layout->set_footer(new View('footer'));
+	
+	}
+	
+	public function login() {
+		$this->layout->set_subtitle('Login Page');
+		$this->layout->set_body(new View('login_page/index'));
+		$this->layout->render();
 	}
 	
 	public function index()
 	{
-	  $sections = array(
-			'config'  => TRUE,
-			'queries' => TRUE
-    );
-
-		$this->output->set_profiler_sections($sections);
-		$this->output->enable_profiler(true);
-		
-		if ( ! file_exists('application/views/main_page/index.php')){
-			show_404();
-		}
-		$this->load->view('main_page/index', array());
+		$this->layout->set_subtitle('Main Page');
+		$this->layout->set_body(new View('main_page/index'));
+		$this->layout->render();
 	}
 	
 }

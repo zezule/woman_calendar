@@ -1,0 +1,205 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+a, a:hover, a:visited {
+	text-decoration: none;
+	color: #222222;
+}
+body {
+	background-color: #ebebeb;
+	background-image: url(../img/main_banner_background.gif);
+	background-repeat: repeat-x;
+
+	font-family: Arial;
+	font-size: 15px;
+}
+
+body > header {
+	height: 100px;
+	background-image: url(../img/jj.gif);
+	background-repeat: no-repeat;
+}
+
+figure {
+
+}
+
+figcaption {
+	margin: 20px 0px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 22px;
+}
+#footer_background > footer {
+	height: 60px;
+}
+
+#footer_background {
+	background-color: #ebebeb;
+	background-image: url(../img/footer.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+footer {
+	padding-top: 40px;
+	font-size: 12px;
+	vertical-align: middle;
+}
+button {
+	cursor: pointer;
+}
+
+h1 {
+	color: #444;
+	font-size : 26px;
+	margin: 0px 20px 20px 0px;
+	padding: 22px 0px 0px 60px;
+}
+h2 {
+	color: #36bbc7;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0px 20px 10px 0px;
+}
+h3 {
+	color: #4ed2d0;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.page_content {
+	width: 1024px;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+#tab_content{
+	clear: both;
+	background: #fff;
+	border: 1px solid black;
+	margin-top : 10px;
+	margin-bottom: 40px;
+	padding: 30px 40px 30px 30px;
+}
+
+#menu{
+	height: 30px;
+}
+#main_menu {
+	display: inline-block;
+	float: left;
+}
+
+#main_menu_elements li{
+	font-size: 16px;
+	display: inline;
+}
+#main_menu_elements li:before{
+	content : '|';
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#main_menu_elements :first-child:before{
+	content : '';
+	padding: 0px;
+}
+
+input{
+	border: 1px solid #787878;
+	height: 20px;
+	padding: 2px;
+}
+input[type=text]{
+	color: #9b9b9b;
+	text-align: center;
+	margin-right: 15px;
+}
+
+input[type=submit], button{
+	background: #f8f5f5;
+	border: 1px solid #d3d3d3;
+	text-align: center;
+	padding: 4px;
+	width: auto;
+	height: 26px;
+}
+input[type=submit]:hover, button:hover{
+	background: #a9d0d0;
+	border: 1px solid #222222;
+}
+.form_control_group{
+	display: inline-block;
+}
+ul {
+	list-style: none;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.iz_multiple_calendars .ui-datepicker-prev {
+	display: none;
+}
+.iz_multiple_calendars .ui-datepicker-next {
+	display: none;
+}
+.iz_multiple_calendars .ui-datepicker-group {
+	background: #efefef;
+	padding: 5px;
+	margin: 10px 20px 10px 20px;
+	border: 1px solid #d3d3d3;
+	width: 13em;
+}
+
+.iz_multiple_calendars .ui-datepicker-title {
+	font-size: 12px;
+}
+.iz_multiple_calendars .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	border: none;
+	background: inherit;
+	margin-left: auto;
+  margin-right: auto;
+}
+.iz_multiple_calendars .ui-datepicker-header{
+	border: 1px solid #626262;
+	background: #4eb0af url(../img/ui-bg_highlight-hard_80_4eb0af_1x100.png) 50% 50% repeat-x;
+	color: #222222;
+	font-weight: bold;
+}
+.iz_multiple_calendars .ui-state-highlight {
+	background: inherit;
+	border: none;
+}
+
+.iz_multiple_calendars .ui-state-disabled {
+	opacity: 100;
+}
+
+.iz_multiple_calendars .ui-state-highlight .ui-state-default {
+	background: #4ecdcb;
+	font-weight: bold;
+	border: 1px solid #48b4bb;
+	color: #fff !important;
+}
+.iz_multiple_calendars .fertile_day span{
+	font-weight: bold;
+	background: #48a3d2;
+	border: 1px solid #3e8bb2;
+	color: #fff !important;
+}
+
+.iz_multiple_calendars .ovulation_day span {
+	font-weight: bold;
+	background: #b382ca;
+	border: 1px solid #89629b;
+	color: #fff !important;
+}
+
+.calendar_cell_legend {
+	width: 20px;
+	height : 20px;
+	display: inline-block;
+}

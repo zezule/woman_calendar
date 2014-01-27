@@ -6,7 +6,7 @@ require(APPPATH . 'libraries/AJAX_Response.php');
 class Period extends REST_Controller {
 
 	const DISPLAYED_YEARS = 3;
-	private function load_resources()
+	private function _load_resources()
 	{
 		$this->load->model('period_model');
 		$this->load->helper('date_validator');
@@ -18,7 +18,7 @@ class Period extends REST_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load_resources();
+		$this->_load_resources();
 	}
 	
 	public function entry_post()
