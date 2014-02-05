@@ -1,0 +1,26 @@
+{{!
+{
+  "name" : "Your Period Tab",
+  "decription" : "A Demo Template",
+  "helpers": ["../helpers/translate"]
+}
+}}
+<h2>Login Page</h2>
+<form method="post" action="login/signin">
+	<div class="form_control_group">
+		<label for="login">Email</label>
+		<br/>
+		<input type="text" id="email" name="email" value="izabella.zimna@gmail.com"/>
+		<span id="email_error"></span>
+	</div>
+	<br/>
+	<div class="form_control_group">
+		<label for="password">Password</label>
+		<br/>
+		<input type="password" id="password" name="password" value="12Maszyna!"/>
+		<span id="password_error"></span>
+	</div>
+	</br>
+	<button data-href="main/index" id="login_user">login</button>
+	<input type="submit" value="create account"/>
+</form>

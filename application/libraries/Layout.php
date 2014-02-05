@@ -12,6 +12,12 @@ class Layout implements Renderable {
 	private $_body = null;
 	private $_footer = null;
 	
+	private $_js = null;
+	
+	public function add_js($file) {
+		$this->_js = $file;
+	}
+	
 	public function set_title($title){
 		$this->_page_title = $title;
 	}
@@ -36,6 +42,7 @@ class Layout implements Renderable {
 	
 	public function get_content(){
 		$vars = array(
+			'js' => $this->_js,
 		  'title' => $this->_page_title,
 			'subtitle' => $this->_page_subtitle, 
 			'header' => $this->_header->get_content(),

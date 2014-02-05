@@ -38,6 +38,10 @@
 |
 */
 
+
+$route['login/(:any)'] = 'login/$1/format/json';
+$route['login'] = 'login/index/format/html';
+
 $route['period/read'] = 'period/read/format/json';
 $route['period/entry/(:any)'] = 'period/entry/$1/format/json';
 $route['period/entry'] = 'period/entry/format/json'; //data to tak 19/23/24 <-- trzymaj w timestamp w intcie

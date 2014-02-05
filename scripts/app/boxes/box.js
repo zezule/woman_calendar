@@ -6,6 +6,7 @@ define(['app/constant', 'backbone'],
 				throw new Error('[Abstract] Method is abstract and should be overwritten');
 			}
 		});
+
 		Box.prototype.handle_event = function(event_name) {
 			switch (event_name) {
 				case Constant.CHART_BOX_NEW_DATA_READY_EVENT :

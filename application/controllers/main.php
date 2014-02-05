@@ -1,32 +1,26 @@
 <?php
-require_once(APPPATH . 'libraries/Layout.php');
-require_once(APPPATH . 'libraries/View.php');
 
 class Main extends CI_Controller {
 
-	private $layout = null;
-	
-	public function __construct()
-	{
-		parent::__construct();
-		$this->layout = new Layout();
-		$this->layout->set_title('KK');
-		$this->layout->set_header(new View('header'));
-		$this->layout->set_footer(new View('footer'));
-	
-	}
-	
-	public function login() {
-		$this->layout->set_subtitle('Login Page');
-		$this->layout->set_body(new View('login_page/index'));
-		$this->layout->render();
-	}
-	
 	public function index()
 	{
-		$this->layout->set_subtitle('Main Page');
-		$this->layout->set_body(new View('main_page/index'));
-		$this->layout->render();
+		$this->load->library('StandardLayout');
+		$this->load->library('session');
+		$session_uid = $this->session->userdata('user_id');
+		if (false === (bool)$session_uid){
+			show_error('You are not logged in', 403);
+			//powinien byc redirect do strony logowania
+		}
+		$this->display_main_page();
 	}
-	
+
+	private function display_main_page()
+	{
+		$layout = new StandardLayout();
+		$layout->set_subtitle('Main Page');
+		$layout->add_js('main_page');
+		$layout->set_body(new View('main_page/index'));
+		$layout->render();
+	}
+
 }
